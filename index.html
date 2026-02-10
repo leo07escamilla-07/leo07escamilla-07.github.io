@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LasMargaritas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="Arriba">
+        </section>
+    <header>
+        <section id="navegador">
+            <div class="container">
+            <p class="logo"><span class="color-logo"> LAS</span> MARGARITAS</p>
+                <nav>
+                    <a href="#menu">Menú</a>
+                    <a href="#nuestros-sabores">Nuestros Sabores</a>
+                    <a href="#nosotros">Nosotros</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <section id="las-margaritas">
+        <div class="container">
+            <div class="texto"></div>
+            <h2>LAS MARGARITAS</h2>
+            <h3>"Un lugar lleno de sabor"</h3>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Menú</h2>
+            <div class="opciones">
+                <div class="seccion">
+                    <h3>Fritangas</h3>
+                    <ul id="lista1">
+                        <li>Panuchos</li>
+                        <li>Salbutes</li>
+                        <Li>Empanadas</Li>
+                        <li>Sopes</li>
+                    <button id="boton2" onclick="Ocultar();">Ocultar</button>
+                    </ul>
+                    <button id="boton1" onclick="mostrar();">Ver más</button>
+                    
+                    <script>
+                        function mostrar(){
+                            document.getElementById("lista1").style.display='block';
+                            document.getElementById("boton1").style.visibility='hidden';
+                            document.getElementById("boton2").style.visibility = 'visible';
+
+                        }
+                         function Ocultar(){
+                            document.getElementById("lista1").style.display='none';
+                            document.getElementById("boton1").style.visibility='visible';
+                            document.getElementById("boton2").style.visibility = 'hidden';
+                        }
+
+                        window.addEventListener('load', function() {
+                        // Al cargar la página forzamos el estado inicial
+                        document.getElementById("lista1").style.display = 'none';
+                        document.getElementById("boton1").style.visibility = 'visible';
+                        document.getElementById("boton2").style.visibility = 'hidden';});
+                    </script>
+                </div>
+                <div class="seccion">
+                    <h3>A La Plancha</h3>
+                    <ul id="list-2">
+                        <li>Tacos</li>
+                        <li>Tortas</li>
+                        <Li>Sincronizadas</Li>
+                        <li>Gringas</li>
+                        <li>Mestizas</li>
+                        <li>Burritas</li>
+                    <button id="botn2" onclick="Ocultar1();">Ocultar</button>
+                    </ul>
+                    <button id="botn1" onclick="mostrar1();">Ver más</button>
+                    <script>
+                        function mostrar1(){
+                            document.getElementById("list-2").style.display='block';
+                            document.getElementById("botn1").style.visibility='hidden';
+                            document.getElementById("botn2").style.visibility = 'visible';
+
+                        }
+                         function Ocultar1(){
+                            document.getElementById("list-2").style.display='none';
+                            document.getElementById("botn1").style.visibility='visible';
+                            document.getElementById("botn2").style.visibility = 'hidden';
+                        }
+
+                        window.addEventListener('load', function() {
+                        // Al cargar la página forzamos el estado inicial
+                        document.getElementById("list-2").style.display = 'none';
+                        document.getElementById("botn1").style.visibility = 'visible';
+                        document.getElementById("botn2").style.visibility = 'hidden';});
+                    </script>
+                </div>
+                <div class="seccion">
+                    <h3>Bebidas</h3>
+                    <ul id="listaB">
+                        <li>Licuados</li>
+                        <li>Frappes</li>
+                        <Li>Refrescos</Li>
+                        <li>Naturales</li>
+                    <button id="boton-2" onclick="Ocultaro();">Ocultar</button>
+                    </ul>
+                    <button id="boton-1" onclick="mostrarm();">Ver más</button>
+                    <script>
+                        function mostrarm(){
+                            document.getElementById("listaB").style.display='block';
+                            document.getElementById("boton-1").style.visibility='hidden';
+                            document.getElementById("boton-2").style.visibility = 'visible';
+
+                        }
+                         function Ocultaro(){
+                            document.getElementById("listaB").style.display='none';
+                            document.getElementById("boton-1").style.visibility='visible';
+                            document.getElementById("boton-2").style.visibility = 'hidden';
+                        }
+
+                        window.addEventListener('load', function() {
+                        // Al cargar la página forzamos el estado inicial
+                        document.getElementById("listaB").style.display = 'none';
+                        document.getElementById("boton-1").style.visibility = 'visible';
+                        document.getElementById("boton-2").style.visibility = 'hidden';});
+                    </script>
+                </div>
+                <div class="seccion">
+                    <h3>Especiales</h3>
+                    <ul id="espe">
+                        <li>Memizas</li>
+                        <li>Nachos</li>
+                    <button id="boton-4" onclick="Ocultarl();">Ocultar</button>
+                    </ul>
+                    <button id="boton-3" onclick="mostrarl();">Ver más</button>
+                    <script>
+                        function mostrarl(){
+                            document.getElementById("espe").style.display='block';
+                            document.getElementById("boton-3").style.visibility='hidden';
+                            document.getElementById("boton-4").style.visibility = 'visible';
+
+                        }
+                         function Ocultarl(){
+                            document.getElementById("espe").style.display='none';
+                            document.getElementById("boton-3").style.visibility='visible';
+                            document.getElementById("boton-4").style.visibility = 'hidden';
+                        }
+
+                        window.addEventListener('load', function() {
+                        // Al cargar la página forzamos el estado inicial
+                        document.getElementById("espe").style.display = 'none';
+                        document.getElementById("boton-3").style.visibility = 'visible';
+                        document.getElementById("boton-4").style.visibility = 'hidden';});
+                    </script>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="nuestros-sabores">
+        
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2><span class="color-logo">De </span>La Milpa a Tu Mesa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eaque magni quis aperiam. Eligendi, fugiat. Soluta eos iure tenetur, repudiandae, veritatis nisi aliquam nemo repellat vitae quod ullam accusamus? Eveniet?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="container">
+            <div class="image-container"></div>
+            <div class="texto">
+                <h2>Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, id, beatae dignissimos aspernatur, repellendus labore officia itaque dicta ratione perferendis dolores officiis consequatur at. Beatae impedit dolores sequi veritatis fugiat?</p>
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">   
+            <a href="#Arriba">Volver al Inicio</a>
+            <a href="https://www.facebook.com/lasMargaritasPanaba">Contactanos</a>
+            <p>&copy; LasMargaritas 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
